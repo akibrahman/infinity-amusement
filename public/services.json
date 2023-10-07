@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Concerts & Music Festivals",
+    "image": "https://i.ibb.co/WzxrD3L/s1.webp",
+    "description": "Concerts and music festivals are electrifying live events that bring music lovers together. Concerts feature artists performing their hits, while music festivals showcase diverse lineups across multiple stages. Both offer unforgettable experiences filled with music, energy, and camaraderie.",
+    "price": 1299
+  },
+  {
+    "id": 2,
+    "name": "Theater & Performing Arts",
+    "image": "https://i.ibb.co/R4sdBD9/s2.jpg",
+    "description": "Theater and Performing Arts encompass live performances, such as plays, musicals, dance, and more. These forms of artistic expression engage audiences through storytelling, music, movement, and acting, creating immersive and emotional experiences that explore the human condition and provoke thought and emotion.",
+    "price": 1699
+  },
+  {
+    "id": 3,
+    "name": "Dance Show",
+    "image": "https://i.ibb.co/p0wRdWf/s3.jpg",
+    "description": "Experience the mesmerizing world of dance in our spectacular dance show. Watch as talented dancers blend artistry and rhythm, creating a breathtaking performance that will leave you spellbound. Join us for an unforgettable evening of movement, emotion, and pure entertainment.",
+    "price": 499
+  },
+  {
+    "id": 4,
+    "name": "Film Screening & Premieres",
+    "image": "https://i.ibb.co/VpGSNjZ/s4.jpg",
+    "description": "Experience the magic of cinema with our exclusive film screenings and premieres. Join us for a glimpse into the world of storytelling, where you'll be among the first to witness cinematic masterpieces and engage with the artistry behind the silver screen.",
+    "price": 1999
+  },
+  {
+    "id": 5,
+    "name": "Comedy Show",
+    "image": "https://i.ibb.co/z5K5Mc2/s5.jpg",
+    "description": "Prepare to laugh until your sides hurt at our uproarious comedy show! Talented comedians will deliver punchlines that will leave you in stitches. Get ready for a night of non-stop hilarity and memorable moments.",
+    "price": 799
+  },
+  {
+    "id": 6,
+    "name": "Sports Show",
+    "image": "https://i.ibb.co/YRGBsTH/s6.jpg",
+    "description": "Get ready for an adrenaline-packed sports show! Join us for thrilling highlights, expert analysis, and exclusive interviews with your favorite athletes. Don't miss the action - tune in for all things sports!",
+    "price": 999
+  }
+]
