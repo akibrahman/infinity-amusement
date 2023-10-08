@@ -1,10 +1,17 @@
 // import logo from "/logo.png";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import user from "/user.jpg";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const NavBar = () => {
+  const { user, load, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((e) => console.log(e));
+  };
   return (
-    <div className="font-poppins bbg-[rgba(0,0,0,0.8)] bg-[#1F3149]  w-full z-10">
+    <div className="font-poppins bg-gradient-to-r from-[#141E30] to-[#243B55]  w-full z-10">
       <div className="w-[90%] mx-auto flex items-center justify-between py-4">
         <div className="">
           <p className="font-logo text-2xl font-bold text-white">
@@ -26,20 +33,32 @@ const NavBar = () => {
             <p>Contact us</p>
           </NavLink>
         </div>
-        <div className="hidden items-center justify-center gap-4">
-          <img className="w-11 h-11 rounded-full" src={user} alt="" />
-          <p className="text-white">Akib Rahman</p>
-          <button className="bg-red-500 px-3 py-1 rounded-lg font-medium text-white">
-            Log out
-          </button>
-        </div>
-        <div className="flex items-center justify-center gap-4">
-          <Link to="/login">
-            <button className="bg-green-500 px-3 py-1 rounded-lg font-medium text-white">
-              Log In
+        {user && !load ? (
+          <div className="flex items-center justify-center gap-4">
+            <img
+              className="w-11 h-11 rounded-full"
+              src={user.photoURL}
+              alt=""
+            />
+            <p className="text-white">
+              {user.displayName ? user.displayName : "Nai"}
+            </p>
+            <button
+              onClick={handleLogOut}
+              className="bg-red-500 px-3 py-1 rounded-lg font-medium text-white"
+            >
+              Log out
             </button>
-          </Link>
-        </div>
+          </div>
+        ) : (
+          <div className="flex items-center justify-center gap-4">
+            <Link to="/login">
+              <button className="bg-[#141E30] px-4 py-2 rounded-lg font-medium text-white">
+                Log In
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

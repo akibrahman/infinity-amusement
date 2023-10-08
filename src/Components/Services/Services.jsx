@@ -23,12 +23,12 @@ const Services = () => {
               {event.description}
             </p>
             <div className="mt-8 flex items-center justify-between">
-              <p className="font-bold text-lg bg-green-400 w-max px-3 py-1 rounded-lg text-white">
+              <p className="font-bold text-lg bg-[#141E30] w-max px-3 py-1 rounded-lg text-white">
                 ${event.price}
               </p>
               <Link to={`/service/details/${event.id}`}>
                 <button className="font-semibold px-3 py-1 rounded-lg active:scale-75 duration-300 cursor-pointer">
-                  <BsArrowRight className="active:scale-75 duration-500 font-black text-green-400 text-3xl"></BsArrowRight>
+                  <BsArrowRight className="active:scale-75 duration-500 font-black text-[#141E30] text-3xl"></BsArrowRight>
                 </button>
               </Link>
             </div>

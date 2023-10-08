@@ -23,7 +23,6 @@
   transform: all 0.6s ease-in-out;
 }
 .sign-up-container {
-  /* opacity: 0; */
   z-index: 1;
 }
 .sign-in-container {

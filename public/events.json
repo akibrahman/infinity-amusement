@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Concerts",
+    "image": "https://i.ibb.co/qJ2C6rj/11.jpg",
+    "place": "Toronto, Canada",
+    "date": "15-11-2023"
+  },
+  {
+    "id": 2,
+    "name": "Spectacular Showdown",
+    "image": "https://i.ibb.co/cFTh0PF/23.jpg",
+    "place": "Vancouver, Canada",
+    "date": "03-12-2-2023"
+  },
+  {
+    "id": 3,
+    "name": "Theater Productions",
+    "image": "https://i.ibb.co/VpGSNjZ/s4.jpg",
+    "place": "Montreal, Canada",
+    "date": "25-10-2023"
+  },
+  {
+    "id": 4,
+    "name": "Music Mania Festival",
+    "image": "https://i.ibb.co/gT9R9gX/13.jpg",
+    "place": "Calgary, Canada",
+    "date": "18-02-2024"
+  },
+  {
+    "id": 5,
+    "name": "Comedy Carnival",
+    "image": "https://i.ibb.co/qp4rN56/53.jpg",
+    "place": "Edmonton, Canada",
+    "date": "29-11-2023"
+  },
+  {
+    "id": 6,
+    "name": "Dance Fusion Festival",
+    "image": "https://i.ibb.co/Z8S2ySj/31.jpg",
+    "place": "Ottawa, Canada",
+    "date": "12-03-2024"
+  },
+  {
+    "id": 7,
+    "name": "Sports Events",
+    "image": "https://i.ibb.co/5B7FkrX/63.jpg",
+    "place": "Quebec City, Canada",
+    "date": "15-12-2023"
+  },
+  {
+    "id": 8,
+    "name": "Circus Performances",
+    "image": "https://cdn.britannica.com/96/198296-050-65D1A810/Clowns-tour-Ringling-Bros-Barnum-Atlanta-2017.jpg",
+    "place": "Winnipeg, Canada",
+    "date": "08-01-2024"
+  },
+  {
+    "id": 9,
+    "name": "Film Screenings",
+    "image": "https://i.ibb.co/LRNwCjD/42.jpg",
+    "place": "Halifax, Canada",
+    "date": "20-05-2024"
+  }
+]

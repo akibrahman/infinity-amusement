@@ -1,54 +1,115 @@
 // import { BiHappyBeaming } from "react-icons/bi";
 // import logo from "/logo.png";
+import { useContext } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
-import { BiLogoFacebook } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 import "./Login.css";
 
 const Login = () => {
+  const { githubLogin, googleLogin, logIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(() => {
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((e) => {
+        console.log(e.code);
+      });
+  };
+
+  const handleGithubLogin = () => {
+    githubLogin()
+      .then(() => {
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((e) => console.log(e));
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    logIn(form.get("email"), form.get("password"))
+      .then(() => {
+        navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Logged In", { autoClose: 2000 });
+      })
+      .catch((e) => console.log(e));
+  };
+
   return (
-    <div className="main-div">
-      <div className="container" id="container">
-        <div className="form-container sign-in-container">
-          <form className="main-form" action="#">
-            <h1 className="title">Sign in</h1>
-            <div className="social-container">
-              <a href="#" className="active:scale-50 duration-300 ease-in-out">
-                <BiLogoFacebook className="text-xl"></BiLogoFacebook>
-              </a>
-              <a href="#" className="active:scale-50 duration-300 ease-in-out">
-                <AiOutlineGoogle className="text-xl"></AiOutlineGoogle>
-              </a>
-              <a href="#" className="active:scale-50 duration-300 ease-in-out">
-                <AiFillGithub className="text-xl"></AiFillGithub>
-              </a>
-            </div>
-            <span>or use your account</span>
-            <div className="infield">
-              <input type="email" placeholder="Email" name="email" />
-              <label></label>
-            </div>
-            <div className="infield">
-              <input type="password" placeholder="Password" />
-              <label></label>
-            </div>
-            <a href="#" className="forgot">
-              Forgot your password?
+    <div className="flex items-center w-[70%] mx-auto shadow-xl my-10">
+      {/* <ToastContainer></ToastContainer> */}
+      <div className="w-1/2 p-10">
+        <form
+          className="flex flex-col gap-4 items-center"
+          onSubmit={handleLogin}
+        >
+          <h1 className="font-bold text-3xl">Sign in</h1>
+          <div className="flex gap-4">
+            <a
+              href="#"
+              onClick={handleGoogleLogin}
+              className="border rounded-full p-2"
+            >
+              <AiOutlineGoogle className="text-xl"></AiOutlineGoogle>
             </a>
-            <button className="in-btn">Sign In</button>
-          </form>
-        </div>
-        <div className="overlay-container" id="overlayCon">
-          <div className="overlay">
-            <div className="overlay-panel overlay-right">
-              <h1 className="title">Hello, Friend!</h1>
-              <p>Do not have an Account?</p>
-              <Link to="/registration">
-                <button className="out-btn">Sign Up</button>
-              </Link>
-            </div>
+            <a
+              href="#"
+              onClick={handleGithubLogin}
+              className="border rounded-full p-2"
+            >
+              <AiFillGithub className="text-xl"></AiFillGithub>
+            </a>
           </div>
-        </div>
+          <span>or use your account</span>
+          <div className="w-full">
+            <input
+              className="w-full bg-[#f3f3f3] px-4 py-3"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+            <label className=""></label>
+          </div>
+          <div className="w-full">
+            <input
+              className="w-full bg-[#f3f3f3] px-4 py-3"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <label className=""></label>
+          </div>
+          <a href="#" className="">
+            Forgot your password?
+          </a>
+          <button
+            type="submit"
+            className="bg-[#141E30] text-white font-bold uppercase rounded-[20px] py-3 px-11 text-xs"
+          >
+            Log In
+          </button>
+        </form>
+      </div>
+
+      <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] w-1/2 flex flex-col items-center  h-full py-10 text-white rounded-md">
+        <h1
+          className="text-3xl font-semibold mb-10
+        "
+        >
+          Hello, Friend!
+        </h1>
+        <p>Do not have an Account?</p>
+        <Link to="/registration">
+          <button className="border px-6 py-2 rounded-3xl mt-3">
+            Register
+          </button>
+        </Link>
       </div>
     </div>
   );
