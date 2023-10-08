@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import DetailsPage from "./Components/DetailsPage/DetailsPage";
 import Events from "./Components/Events/Events";
 import HomaPage from "./Components/HomePage/HomaPage";
 import Profile from "./Components/Profile/Profile";
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Events></Events>,
       },
+
       {
         path: "/profile",
         element: <Profile></Profile>,
@@ -29,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/contactus",
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/service/details/:id",
+        loader: () => fetch("/services-details.json"),
+        element: <DetailsPage></DetailsPage>,
       },
     ],
   },

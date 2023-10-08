@@ -4,7 +4,7 @@ import user from "/user.jpg";
 
 const NavBar = () => {
   return (
-    <div className="font-poppins bbg-[rgba(0,255,0,0.2)] absolute w-full z-10">
+    <div className="font-poppins bg-[rgba(0,255,0,0.2)] absolute w-full z-10">
       <div className="w-[90%] mx-auto flex items-center justify-between py-4">
         <div className="">
           <p className="font-logo text-2xl font-bold text-white">

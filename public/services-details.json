@@ -40,7 +40,11 @@
     "id": 4,
     "name": "Film Screening & Premieres",
     "image": "https://i.ibb.co/VpGSNjZ/s4.jpg",
-    "images": ["Link1", "Link2", "Link3"],
+    "images": [
+      "https://i.ibb.co/RbQYFWF/41.jpg ",
+      "https://i.ibb.co/LRNwCjD/42.jpg",
+      "https://i.ibb.co/35XXzbd/43.webp"
+    ],
     "description": "Film screenings and premieres are the pivotal moments in the world of cinema when a new cinematic creation is unveiled to the world. These events are the culmination of months, if not years, of hard work, dedication, and artistic expression. Film screenings offer the opportunity for filmmakers to share their vision with a live audience, and they serve as a platform for dialogue and critique. From indie gems to blockbuster epics, film screenings bring stories to life, transporting viewers to different worlds and emotional landscapes. Premieres, on the other hand, hold a special place in the hearts of cinephiles and industry insiders alike. They are the grand unveiling of a film before it hits theaters, often attended by the cast, crew, and celebrities. Premieres are a celebration of cinematic achievement, and they generate immense anticipation and excitement. Both film screenings and premieres are about more than just watching a movie; they are about experiencing art, storytelling, and culture. They create moments of wonder, reflection, and connection that remind us of the power of cinema to inspire, entertain, and move us. These events are a testament to the creativity and dedication of filmmakers and the enduring magic of the silver screen.",
     "price": 1999
   },
@@ -48,7 +52,11 @@
     "id": 5,
     "name": "Comedy Show",
     "image": "https://i.ibb.co/z5K5Mc2/s5.jpg",
-    "images": ["Link1", "Link2", "Link3"],
+    "images": [
+      "https://i.ibb.co/rG8WKth/51.jpg  ",
+      "https://i.ibb.co/b56pzLt/52.jpg",
+      "https://i.ibb.co/qp4rN56/53.jpg"
+    ],
     "description": "A Night of Laughter: The Comedy Show You Won't Want to Miss! -- Prepare to split your sides and forget your worries at our uproarious comedy show! Our side-splitting lineup of top-notch comedians will leave you in stitches from start to finish. From clever one-liners to hilarious anecdotes about everyday life, our comedians cover a wide range of topics that will have you laughing until your cheeks hurt. You'll experience a rollercoaster of emotions, from uncontrollable laughter to moments of relatable, thought-provoking humor. Our comedy show isn't just about the performers; it's about creating an unforgettable night of entertainment. The cozy ambiance, friendly audience, and the shared joy of laughter create an atmosphere where you'll feel right at home. Whether you're seeking an evening of lighthearted fun, a break from the daily grind, or a chance to bond with friends and family over shared chuckles, our comedy show promises an unforgettable experience. So, grab your tickets, bring your best belly laugh, and get ready to be entertained like never before. You won't want to miss this night of laughter and camaraderie!",
     "price": 799
   },
@@ -56,7 +64,11 @@
     "id": 6,
     "name": "Sports Show",
     "image": "https://i.ibb.co/YRGBsTH/s6.jpg",
-    "images": ["Link1", "Link2", "Link3"],
+    "images": [
+      "https://i.ibb.co/f9wm9RT/61.jpg ",
+      "https://i.ibb.co/JQbT18s/62.jpg",
+      "https://i.ibb.co/5B7FkrX/63.jpg"
+    ],
     "description": "Get ready to witness the exhilarating world of sports like never before with our thrilling Sports Show! Step into a realm where passion, competition, and athleticism converge to create moments of sheer awe and inspiration. Our Sports Show is a celebration of human achievement, showcasing the dedication and determination of athletes who push their limits to achieve greatness. Whether it's the thunderous roar of a stadium filled with fans or the silent intensity of an individual's focus, our show captures the essence of what makes sports so captivating. From heart-pounding action on the field to heartwarming stories of triumph over adversity, our Sports Show is a rollercoaster of emotions. You'll witness record-breaking performances, incredible displays of skill, and the unbreakable spirit of athletes who refuse to give up. Join us for a spectacle that transcends boundaries and unites people from all walks of life in their love for sports. Whether you're a die-hard fan or just looking for an unforgettable experience, our Sports Show promises to leave you breathless and inspired. Get ready to cheer, celebrate, and be part of the magic that is sports!",
     "price": 999
   }
