@@ -4,7 +4,7 @@ import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="font-poppins">
       <NavBar></NavBar>
       <Outlet></Outlet>
     </div>

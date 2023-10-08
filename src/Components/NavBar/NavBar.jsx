@@ -1,10 +1,10 @@
 // import logo from "/logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import user from "/user.jpg";
 
 const NavBar = () => {
   return (
-    <div className="font-poppins bg-[rgba(0,255,0,0.2)] absolute w-full z-10">
+    <div className="font-poppins bbg-[rgba(0,0,0,0.8)] bg-[#1F3149]  w-full z-10">
       <div className="w-[90%] mx-auto flex items-center justify-between py-4">
         <div className="">
           <p className="font-logo text-2xl font-bold text-white">
@@ -34,9 +34,11 @@ const NavBar = () => {
           </button>
         </div>
         <div className="flex items-center justify-center gap-4">
-          <button className="bg-green-500 px-3 py-1 rounded-lg font-medium text-white">
-            Log In
-          </button>
+          <Link to="/login">
+            <button className="bg-green-500 px-3 py-1 rounded-lg font-medium text-white">
+              Log In
+            </button>
+          </Link>
         </div>
       </div>
     </div>

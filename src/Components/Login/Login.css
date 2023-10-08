@@ -1,0 +1,184 @@
+.main-div {
+  height: 100vh;
+  background: #f6f5f7;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  width: 80px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 25px 30px 55px #5557;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.form-container {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 0 40px;
+  transform: all 0.6s ease-in-out;
+}
+.sign-up-container {
+  /* opacity: 0; */
+  z-index: 1;
+}
+.sign-in-container {
+  z-index: 2;
+}
+.main-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+.title {
+  color: #141e30;
+  font-size: 30px;
+  font-weight: bold;
+}
+.social-container {
+  margin: 20px 0;
+}
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+.ss {
+  font-size: 12px;
+}
+.infield {
+  position: relative;
+  margin: 8px 0px;
+  width: 100%;
+}
+.infield input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+}
+.infield label {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #141e30, #243b55);
+  transition: 0.3s;
+}
+input:focus ~ label {
+  width: 100%;
+}
+.forgot {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #eee;
+}
+.out-btn,
+.in-btn {
+  border-radius: 20px;
+  border: 1px solid #141e30;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #141e30;
+  transition: all 0.3s linear;
+}
+.in-btn:active,
+.out-btn:active {
+  transform: scale(0.7);
+}
+.in-btn {
+  margin-top: 17px;
+}
+.in-btn:hover {
+  background: #fff;
+  color: #141e30;
+}
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 9;
+}
+#overlayBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 304px;
+  transform: translateX(-50%);
+  width: 143.67px;
+  height: 40px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 20px;
+}
+.overlay {
+  position: relative;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  left: -150%;
+  height: 100%;
+  width: 250%;
+  transition: transform 0.6s ease-in-out;
+}
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  height: 100%;
+  width: 340px;
+  transition: 0.6s ease-in-out;
+}
+.overlay-left {
+  right: 60%;
+  transform: translateX(-12%);
+}
+.overlay-right {
+  right: 85px;
+  transform: translateX(0);
+}
+.overlay-panel h1 {
+  color: white;
+}
+.main-div p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 25px 0 35px;
+}
+.out-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid white;
+}

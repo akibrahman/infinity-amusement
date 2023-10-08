@@ -59,7 +59,7 @@ const DetailsPage = () => {
             <SwiperSlide key={target.images.indexOf(i)}>
               <div className="">
                 <img className="w-full relative" src={i} alt="" />
-                <div className="bg-[rgba(0,0,0,0.2)] w-full h-full absolute top-0 left-0"></div>
+                <div className="bg-[rgba(0,0,0,0.5)] w-full h-full absolute top-0 left-0"></div>
               </div>
             </SwiperSlide>
           ))}
