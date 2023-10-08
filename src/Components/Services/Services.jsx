@@ -26,7 +26,7 @@ const Services = () => {
                 ${event.price}
               </p>
               <button className="font-semibold px-3 py-1 rounded-lg active:scale-75 duration-300 cursor-pointer">
-                <BsArrowRight className="font-black text-green-400 text-3xl"></BsArrowRight>
+                <BsArrowRight className="active:scale-75 duration-500 font-black text-green-400 text-3xl"></BsArrowRight>
               </button>
             </div>
           </div>
