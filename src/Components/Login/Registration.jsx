@@ -95,6 +95,7 @@ const Registration = () => {
               type="text"
               placeholder="Name"
               name="name"
+              required
             />
             <label className=""></label>
           </div>
@@ -105,6 +106,7 @@ const Registration = () => {
               type="email"
               placeholder="Email"
               name="email"
+              required
             />
             <label className=""></label>
           </div>
@@ -115,6 +117,7 @@ const Registration = () => {
               type="text"
               placeholder="Photo URL"
               name="url"
+              required
             />
             <label className=""></label>
           </div>
@@ -124,6 +127,7 @@ const Registration = () => {
               type="password"
               placeholder="Password"
               name="password"
+              required
             />
             <label className=""></label>
           </div>
