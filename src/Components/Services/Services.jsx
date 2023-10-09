@@ -16,7 +16,11 @@ const Services = () => {
       </p>
       <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {events.map((event) => (
-          <div key={event.id} className="p-5 rounded-lg shadow-lg">
+          <div
+            data-aos="flip-left"
+            key={event.id}
+            className="p-5 rounded-lg shadow-lg"
+          >
             <img className="rounded-lg h-52 w-full" src={event.image} alt="" />
             <p className="text-2xl text-center font-medium mt-3">
               {event.name}

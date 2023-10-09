@@ -7,7 +7,11 @@ const Profile = () => {
   const { displayName, email, photoURL } = user;
   return (
     <div>
-      <div className="w-[80%] md:w-[60%] mx-auto shadow-2xl p-10 my-10 flex items-center flex-col">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="900"
+        className="w-[80%] md:w-[60%] mx-auto shadow-2xl p-10 my-10 flex items-center flex-col"
+      >
         <img className="w-52 rounded-lg" src={photoURL} alt="" />
         <p className="text-xl md:text-2xl lg:text-3xl font-semibold mt-5">
           {displayName}

@@ -1,8 +1,14 @@
-# React + Vite
+# Infinite Amusements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Infinite Amusements is a website owned by Infinite Amusements LTD. This is an events management company which have an online website to reach their customers more efficiently
 
-Currently, two official plugins are available:
+## There are some Features of our website:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Authentication system by E-mail & Password
+- Authentication with Google & Github
+- Profile Upgation facility
+- 'Events' , 'Profile' & 'Service Details' routes are private. You can't go there without Authentication
+- Every status will be notified by beautiful Toast
+- In every service details, there is a slider with pictures that will help you more to know our services well
+
+## [Live Link - Click here to have a look](https://infinite-amusements.netlify.app/)

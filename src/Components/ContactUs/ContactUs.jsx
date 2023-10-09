@@ -10,7 +10,7 @@ const ContactUs = () => {
     toast.success("Thanks for your Interest", { autoClose: 2000 });
   };
   return (
-    <div>
+    <div data-aos="zoom-in-down">
       <div className="my-10 p-5 rounded-lg bg-gradient-to-r from-[#141E30] to-[#243B55] w-[95%] md:w-[70%] lg:w-[60%]  mx-auto text-white">
         <p className="text-xl font-semibold flex gap-3 items-center">
           <BsFillChatRightHeartFill className="text-2xl"></BsFillChatRightHeartFill>

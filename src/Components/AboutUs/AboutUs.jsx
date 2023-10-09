@@ -7,7 +7,7 @@ const AboutUs = () => {
         About Us
       </p>
       <div className="flex flex-col items-center lg:flex-row mt-10 gap-4 md:gap-0">
-        <img className="md:w-1/2" src={logo} alt="" />
+        <img data-aos="zoom-in" className="md:w-1/2" src={logo} alt="" />
         <div className="text-center md:text-left w-[95%] lg:w-full">
           <p className="text-4xl font-semibold font-logo mb-2">
             Infinite Amusements

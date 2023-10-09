@@ -10,6 +10,7 @@ const Events = () => {
         </p>
         {data.map((event) => (
           <div
+            data-aos="fade-right"
             key={event.id}
             className="flex flex-col md:flex-row items-center gap-6 bg-[#1F3149] p-8 rounded-lg text-white "
           >

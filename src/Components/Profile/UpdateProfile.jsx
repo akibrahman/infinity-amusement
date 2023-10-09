@@ -42,7 +42,7 @@ const UpdateProfile = () => {
     }
   };
   return (
-    <div>
+    <div data-aos="zoom-in-up" data-aos-duration="900">
       <div className="w-[60%] mx-auto shadow-2xl p-10 my-10 flex items-center flex-col">
         <p className="text-[#141E30] md:text-2xl font-semibold mb-10 border-2 border-[#141E30] lg:px-32 px-3 py-3 text-center rounded-lg">
           Update Profile

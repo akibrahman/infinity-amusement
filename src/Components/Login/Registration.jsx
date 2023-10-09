@@ -65,7 +65,11 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center w-[95%] lg:w-[70%] mx-auto shadow-xl my-10">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="900"
+      className="flex flex-col lg:flex-row items-center w-[95%] lg:w-[70%] mx-auto shadow-xl my-10"
+    >
       <div className="lg:w-1/2 p-5 md:p-10">
         <form
           onSubmit={handleRegistration}

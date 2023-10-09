@@ -5,7 +5,10 @@ import logo from "/logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] px-20 pt-10 pb-2 text-white">
+    <div
+      data-aos="fade-down"
+      className="bg-gradient-to-r from-[#141E30] to-[#243B55] px-20 pt-10 pb-2 text-white"
+    >
       <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-between">
         <ul className="order-2 md:order-1 flex flex-col gap-1 text-lg font-bold">
           <Link to="/">
