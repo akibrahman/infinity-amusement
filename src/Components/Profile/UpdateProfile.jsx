@@ -44,7 +44,7 @@ const UpdateProfile = () => {
   return (
     <div>
       <div className="w-[60%] mx-auto shadow-2xl p-10 my-10 flex items-center flex-col">
-        <p className="text-[#141E30] text-2xl font-semibold mb-10 border-2 border-[#141E30] px-32 py-3 rounded-lg">
+        <p className="text-[#141E30] md:text-2xl font-semibold mb-10 border-2 border-[#141E30] lg:px-32 px-3 py-3 text-center rounded-lg">
           Update Profile
         </p>
         <form onSubmit={handleUpdation} className="flex flex-col items-center">

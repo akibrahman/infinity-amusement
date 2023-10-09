@@ -3,17 +3,19 @@ import logo from "/logo.png";
 const AboutUs = () => {
   return (
     <div className="mt-16">
-      <p className="text-center text-5xl font-semibold">About Us</p>
-      <div className="flex mt-10">
-        <img className="w-1/2" src={logo} alt="" />
-        <div className="">
+      <p className="text-center text-3xl md:text-4xl lg:text-5xl font-semibold">
+        About Us
+      </p>
+      <div className="flex flex-col items-center lg:flex-row mt-10 gap-4 md:gap-0">
+        <img className="md:w-1/2" src={logo} alt="" />
+        <div className="text-center md:text-left w-[95%] lg:w-full">
           <p className="text-4xl font-semibold font-logo mb-2">
             Infinite Amusements
           </p>
           <p className="text-xl font-semibold mb-4">
             Crafting Unforgettable Experiences in Entertainment Event Management
           </p>
-          <p>
+          <p className="text-justify md:text-left">
             In a world where entertainment is a crucial aspect of modern life,
             event management companies play a pivotal role in shaping our
             experiences. Among the many,{" "}

@@ -11,8 +11,10 @@ const Services = () => {
   }, []);
   return (
     <div className="mt-16">
-      <p className="text-center text-5xl font-semibold">Services</p>
-      <div className="w-[90%] mx-auto grid grid-cols-3 gap-6 mt-8">
+      <p className="text-center text-3xl md:text-4xl lg:text-5xl font-semibold">
+        Services
+      </p>
+      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {events.map((event) => (
           <div key={event.id} className="p-5 rounded-lg shadow-lg">
             <img className="rounded-lg h-52 w-full" src={event.image} alt="" />

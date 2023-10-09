@@ -15,12 +15,11 @@ const NavBar = () => {
   };
   return (
     <div className="font-poppins bg-gradient-to-r from-[#141E30] to-[#243B55]  w-full z-10">
-      <div className="w-[90%] mx-auto flex items-center justify-between py-4">
+      <div className="w-[90%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between py-4">
         <div className="">
           <p className="font-logo text-2xl font-bold text-white">
             Infinite Amusements
           </p>
-          {/* <img className="w-24" src={logo} alt="" /> */}
         </div>
         <div className="flex items-center justify-center gap-6 text-white">
           <NavLink to="/">

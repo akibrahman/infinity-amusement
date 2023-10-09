@@ -22,7 +22,7 @@ const DetailsPage = () => {
     <div className="font-poppins">
       <div className="-z-10 select-none">
         <Swiper
-          className="h-[80vh]"
+          className="h-[100%] lg:h-[80vh]"
           // install Swiper modules
           // effect={"coverflow"}
           grabCursor={true}
@@ -71,7 +71,9 @@ const DetailsPage = () => {
           </SwiperSlide>
         </Swiper>
         <div className="w-[90%] mx-auto">
-          <p className="font-logo text-4xl my-6">{target.name}</p>
+          <p className="font-logo text-2xl text-center md:text-left md:text-3xl lg:text-4xl my-6">
+            {target.name}
+          </p>
           <p className="border-l-4 rounded-l-lg border-green-400 pl-4 ">
             {target.description}
           </p>

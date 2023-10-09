@@ -10,16 +10,25 @@ const Team = () => {
   }, []);
   return (
     <div className="mt-16">
-      <p className="text-center text-5xl font-semibold">Our Team</p>
+      <p className="text-center text-3xl md:text-4xl lg:text-5xl font-semibold">
+        Our Team
+      </p>
       <Marquee
         speed={100}
         pauseOnHover={true}
-        gradient={true}
+        // gradient={true}
         className="my-10 flex"
       >
         {team.map((t) => (
-          <div key={t.id} className="mr-8 flex flex-col items-center">
-            <img className="w-40 h-32 rounded-lg" src={t.image} alt="" />
+          <div
+            key={t.id}
+            className="mr-8 flex flex-col items-center text-sm md:text-base"
+          >
+            <img
+              className="w-32 md:w-40 h-20 md:h-32 rounded-lg"
+              src={t.image}
+              alt=""
+            />
 
             <p
               className={`font-semibold text-center mt-3 w-full ${

@@ -65,8 +65,8 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex items-center w-[70%] mx-auto shadow-xl my-10">
-      <div className="w-1/2 p-10">
+    <div className="flex flex-col lg:flex-row items-center w-[95%] lg:w-[70%] mx-auto shadow-xl my-10">
+      <div className="lg:w-1/2 p-5 md:p-10">
         <form
           onSubmit={handleRegistration}
           className="flex flex-col gap-4 items-center"
@@ -140,7 +140,7 @@ const Registration = () => {
         </form>
       </div>
 
-      <div className="bg-gradient-to-l from-[#141E30] to-[#243B55] w-1/2 flex flex-col items-center  h-full py-10 text-white rounded-md">
+      <div className="bg-gradient-to-l from-[#141E30] to-[#243B55] w-full lg:w-1/2 flex flex-col items-center  h-full py-10 text-white rounded-md">
         <h1
           className="text-3xl font-semibold mb-10
         "

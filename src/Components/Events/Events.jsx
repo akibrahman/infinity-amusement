@@ -5,13 +5,13 @@ const Events = () => {
   return (
     <div>
       <div className="w-[90%] mx-auto shadow-2xl p-10 my-10 flex items-center flex-col gap-5">
-        <p className="font-semibold text-4xl mb-10 text-[#243B55]">
+        <p className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-10 text-[#243B55]">
           Our Upcoming Events
         </p>
         {data.map((event) => (
           <div
             key={event.id}
-            className="flex items-center gap-6 bg-[#1F3149] p-8 rounded-lg text-white "
+            className="flex flex-col md:flex-row items-center gap-6 bg-[#1F3149] p-8 rounded-lg text-white "
           >
             <p className="font-semibold text-lg">{event.id}.</p>
             <img className="w-40 rounded-md" src={event.image} alt="" />
