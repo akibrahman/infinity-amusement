@@ -1,0 +1,89 @@
+.header {
+  padding: 30px;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.header > p {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+.banner {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b-left,
+.b-right {
+  /* width: 50%; */
+}
+.b-left {
+  display: flex;
+  justify-content: center;
+}
+.b-left img {
+  width: 65%;
+}
+.b-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+}
+.b-right h1 {
+  color: #333;
+  /* font-family: Space Mono; */
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -2.24px;
+}
+.b-right p {
+  width: 40%;
+  color: #4f4f4f;
+  /* font-family: Space Mono; */
+  font-size: 24px;
+  letter-spacing: -0.84px;
+}
+.b-right button {
+  color: #fff;
+  /* font-family: Space Mono; */
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
+  background-color: #333;
+  padding: 25px 42px;
+  border: none;
+  outline: none;
+}
+.copy {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    font-size: 6px;
+  }
+  .header {
+    padding: 5px;
+    height: 100vh;
+  }
+  .banner {
+    flex-direction: column;
+    height: 100%;
+    gap: 80px;
+  }
+  .b-right {
+    gap: 30px;
+  }
+  .copy {
+    margin-top: -50px;
+    font-size: 15px;
+  }
+}

@@ -6,6 +6,7 @@ import App from "./App";
 import AuthProvider from "./Components/AuthProvider/AuthProvider";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import DetailsPage from "./Components/DetailsPage/DetailsPage";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Events from "./Components/Events/Events";
 import HomaPage from "./Components/HomePage/HomaPage";
 import Login from "./Components/Login/Login";
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
