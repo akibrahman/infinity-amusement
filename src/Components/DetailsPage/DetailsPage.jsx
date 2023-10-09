@@ -74,10 +74,13 @@ const DetailsPage = () => {
           <p className="font-logo text-2xl text-center md:text-left md:text-3xl lg:text-4xl my-6">
             {target.name}
           </p>
-          <p className="border-l-4 rounded-l-lg border-green-400 pl-4 ">
+          <p
+            data-aos="zoom-out-up"
+            className="border-l-4 rounded-l-lg border-green-400 pl-4 "
+          >
             {target.description}
           </p>
-          <div className="my-14 flex items-center gap-10">
+          <div data-aos="fade-right" className="my-14 flex items-center gap-10">
             <p className="text-xl">
               <span className="font-bold">Price</span> -{" "}
               <span className="border-green-400 border-2 px-3 py-1 rounded-lg font-semibold ">
