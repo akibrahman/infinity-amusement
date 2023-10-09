@@ -12,6 +12,7 @@ import Login from "./Components/Login/Login";
 import Registration from "./Components/Login/Registration";
 import PrivateR from "./Components/PrivateR/PrivateR";
 import Profile from "./Components/Profile/Profile";
+import UpdateProfile from "./Components/Profile/UpdateProfile";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateR>
             <Profile></Profile>
+          </PrivateR>
+        ),
+      },
+      {
+        path: "/updateProfile",
+        element: (
+          <PrivateR>
+            <UpdateProfile></UpdateProfile>
           </PrivateR>
         ),
       },
