@@ -18,6 +18,22 @@ const Registration = () => {
     e.preventDefault();
     console.log(e);
     const form = new FormData(e.currentTarget);
+    if (form.get("password").length < 6) {
+      toast.warning("Password should be more than 6 character", {
+        autoClose: 2000,
+      });
+      return;
+    } else if (!/[A-Z]/.test(form.get("password"))) {
+      toast.warning("Password should contain atleast one Capital letter", {
+        autoClose: 2000,
+      });
+      return;
+    } else if (!/[^a-zA-Z0-9]/.test(form.get("password"))) {
+      toast.warning("Password should contain atleast one Special character", {
+        autoClose: 2000,
+      });
+      return;
+    }
     register(form.get("email"), form.get("password"))
       .then(() => {
         updateProfile(auth.currentUser, {

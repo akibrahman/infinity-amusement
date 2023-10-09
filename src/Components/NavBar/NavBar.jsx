@@ -1,13 +1,16 @@
 // import logo from "/logo.png";
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const NavBar = () => {
   const { user, load, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
-      .then()
+      .then(() => {
+        toast.success("Successfully Logged out!", { autoClose: 2000 });
+      })
       .catch((e) => console.log(e));
   };
   return (

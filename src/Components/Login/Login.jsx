@@ -16,6 +16,7 @@ const Login = () => {
     googleLogin()
       .then(() => {
         navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Logged In by Google", { autoClose: 2000 });
       })
       .catch((e) => {
         console.log(e.code);
@@ -26,6 +27,7 @@ const Login = () => {
     githubLogin()
       .then(() => {
         navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Logged In by Github", { autoClose: 2000 });
       })
       .catch((e) => console.log(e));
   };
@@ -38,7 +40,11 @@ const Login = () => {
         navigate(location?.state ? location.state : "/");
         toast.success("Successfully Logged In", { autoClose: 2000 });
       })
-      .catch((e) => console.log(e));
+      .catch((e) => {
+        e.code == "auth/invalid-login-credentials"
+          ? toast.error("Wrong Username or Password", { autoClose: 2000 })
+          : toast.error(e.code, { autoClose: 2000 });
+      });
   };
 
   return (
